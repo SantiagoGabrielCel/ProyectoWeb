@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineStream - Series y Películas</title>
+  <link rel="stylesheet" href="./estilos/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="contenedor-header">
+      <a href="#" class="logo">
+        <span>CS</span>
+        CineStream
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#novedades">Novedades</a></li>
+          <li><a href="#tendencias">Tendencias</a></li>
+          <li><a href="#series">Series</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="novedades">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Novedades destacadas</h2>
+        <div class="novedades">
+          <img src="./imagenes/horizonte-fragmentado.jpg" alt="Poster de la serie Horizonte Fragmentado" />
+          <div class="novedades-contenido">
+            <h3>Horizonte Fragmentado</h3>
+            <p class="descripcion">
+              Un misterio de ciencia ficción que sigue a un grupo de exploradores interdimensionales. Cada episodio revela un nuevo fragmento de un multiverso lleno de giros inesperados, dilemas éticos y paisajes impresionantes.
+            </p>
+            <div class="etiquetas">
+              <span class="etiqueta">Ciencia Ficción</span>
+              <span class="etiqueta">Intriga</span>
+              <span class="etiqueta">Visualmente Impactante</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tendencias">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Tendencias de la semana</h2>
+        <div class="tendencias-grid">
+          <article class="tarjeta-tendencia">
+            <img src="./imagenes/breakingbad.jpg" alt="Arte promocional de Breaking Bad" />
+            <div class="contenido-tarjeta">
+              <span class="ranking">#1</span>
+              <h3>Breaking Bad</h3>
+              <p class="descripcion">Walter White se adentra en el mundo del narcotráfico para asegurar el futuro de su familia.</p>
+              <a class="btn-trailer" href="https://www.youtube.com/watch?v=mXd1zTwcQ18" target="_blank" rel="noopener">Ver trailer</a>
+            </div>
+          </article>
+          <article class="tarjeta-tendencia">
+            <img src="./imagenes/bettercallsaul.jpg" alt="Arte promocional de Better Call Saul" />
+            <div class="contenido-tarjeta">
+              <span class="ranking">#2</span>
+              <h3>Better Call Saul</h3>
+              <p class="descripcion">Jimmy McGill lucha por convertirse en abogado respetable antes de transformarse en Saul Goodman.</p>
+              <a class="btn-trailer" href="https://www.youtube.com/watch?v=PjElOuIECdE" target="_blank" rel="noopener">Ver trailer</a>
+            </div>
+          </article>
+          <article class="tarjeta-tendencia">
+            <img src="./imagenes/you.jpg" alt="Arte promocional de la serie You" />
+            <div class="contenido-tarjeta">
+              <span class="ranking">#3</span>
+              <h3>You</h3>
+              <p class="descripcion">Joe Goldberg hará lo que sea necesario para conquistar a la persona que ama, cueste lo que cueste.</p>
+              <a class="btn-trailer" href="https://www.youtube.com/watch?v=6YD0viMgZpg" target="_blank" rel="noopener">Ver trailer</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="series">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Series para maratonear</h2>
+        <div class="series-grid">
+          <article class="serie">
+            <h3>Breaking Bad</h3>
+            <p class="descripcion">Un profesor de química se transforma en uno de los criminales más buscados del suroeste estadounidense.</p>
+          </article>
+          <article class="serie">
+            <h3>Better Call Saul</h3>
+            <p class="descripcion">El origen del abogado más carismático de Albuquerque en una historia llena de ingenio y ambición.</p>
+          </article>
+          <article class="serie">
+            <h3>You</h3>
+            <p class="descripcion">Un thriller psicológico que expone los límites del amor obsesivo y la manipulación.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <form class="contacto">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Correo electrónico
+            <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+          </label>
+          <label>
+            Mensaje
+            <textarea name="mensaje" placeholder="Contanos qué te gustaría ver"></textarea>
+          </label>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2024 CineStream. Todas las historias, una sola pantalla.
+  </footer>
+</body>
+</html>

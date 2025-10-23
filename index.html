@@ -4,19 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CineStream - Series y Películas</title>
+  <!-- conecto la hoja de estilos que armé -->
   <link rel="stylesheet" href="./estilos/styles.css" />
 </head>
 <body>
+  <!-- cabecera con logo y menu -->
   <header>
     <div class="contenedor-header">
       <a href="#" class="logo">
         <span>CS</span>
         CineStream
       </a>
+      <!-- menu para saltar entre secciones -->
       <nav>
         <ul>
           <li><a href="#novedades">Novedades</a></li>
           <li><a href="#tendencias">Tendencias</a></li>
+          <li><a href="#peliculas">Películas</a></li>
           <li><a href="#series">Series</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -25,11 +29,12 @@
   </header>
 
   <main>
+    <!-- bloque principal con la novedad del sitio -->
     <section id="novedades">
       <div class="contenedor">
         <h2 class="titulo-seccion">Novedades destacadas</h2>
         <div class="novedades">
-          <img src="./imagenes/Thepenguin.jpg" alt="Poster de la serie El Pingüino de HBO" />
+          <img src="./imagenes/ThePenguin.jpg" alt="Poster de la serie El Pingüino de HBO" />
           <div class="novedades-contenido">
             <h3>El Pingüino</h3>
             <p class="descripcion">
@@ -45,12 +50,13 @@
       </div>
     </section>
 
+    <!-- tarjetas con lo mas visto esta semana -->
     <section id="tendencias">
       <div class="contenedor">
         <h2 class="titulo-seccion">Tendencias de la semana</h2>
         <div class="tendencias-grid">
           <article class="tarjeta-tendencia">
-            <img src="./imagenes/breakingbad.jpg" alt="Arte promocional de Breaking Bad" />
+            <img src="./imagenes/BreakingBad.jpg" alt="Arte promocional de Breaking Bad" />
             <div class="contenido-tarjeta">
               <span class="ranking">#1</span>
               <h3>Breaking Bad</h3>
@@ -59,7 +65,7 @@
             </div>
           </article>
           <article class="tarjeta-tendencia">
-            <img src="./imagenes/bettercallsaul.jpg" alt="Arte promocional de Better Call Saul" />
+            <img src="./imagenes/BetterCallSaul.jpg" alt="Arte promocional de Better Call Saul" />
             <div class="contenido-tarjeta">
               <span class="ranking">#2</span>
               <h3>Better Call Saul</h3>
@@ -68,7 +74,7 @@
             </div>
           </article>
           <article class="tarjeta-tendencia">
-            <img src="./imagenes/you.jpg" alt="Arte promocional de la serie You" />
+            <img src="./imagenes/You.jpg" alt="Arte promocional de la serie You" />
             <div class="contenido-tarjeta">
               <span class="ranking">#3</span>
               <h3>You</h3>
@@ -80,26 +86,81 @@
       </div>
     </section>
 
-    <section id="series">
+    <!-- galeria de peliculas favoritas -->
+    <section id="peliculas">
       <div class="contenedor">
-        <h2 class="titulo-seccion">Series para maratonear</h2>
-        <div class="series-grid">
-          <article class="serie">
-            <h3>Breaking Bad</h3>
-            <p class="descripcion">Un profesor de química se transforma en uno de los criminales más buscados del suroeste estadounidense.</p>
+        <h2 class="titulo-seccion">Películas para disfrutar</h2>
+        <div class="media-grid">
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.imdb.com/es/video/vi3338323993/?playlistId=tt26743210&ref_=tt_ov_ov_vi" target="_blank" rel="noopener">
+              <img src="./imagenes/comoentrenardragon.jpg" alt="Poster Como entrenar a tu dragon" />
+            </a>
+            <h3>Cómo entrenar a tu dragón</h3>
+            <p class="descripcion">Un joven vikingo aspira a cazar dragones, pero se convierte inesperadamente en amigo de un joven dragón.</p>
           </article>
-          <article class="serie">
-            <h3>Better Call Saul</h3>
-            <p class="descripcion">El origen del abogado más carismático de Albuquerque en una historia llena de ingenio y ambición.</p>
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.imdb.com/es/video/vi2863515673/?playlistId=tt16311594&ref_=tt_ov_ov_vi" target="_blank" rel="noopener">
+              <img src="./imagenes/F1.jpg" alt="Poster de la película F1" />
+            </a>
+            <h3>F1</h3>
+            <p class="descripcion">Sigue a un piloto de Fórmula Uno que sale de su retiro para convertirse en mentor y formar equipo con un piloto más joven.</p>
           </article>
-          <article class="serie">
-            <h3>You</h3>
-            <p class="descripcion">Un thriller psicológico que expone los límites del amor obsesivo y la manipulación.</p>
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.imdb.com/es/video/vi311543833/?playlistId=tt5950044&ref_=tt_ov_pr_ov_vi" target="_blank" rel="noopener">
+              <img src="./imagenes/Superman.jpg" alt="Poster de Superman" />
+            </a>
+            <h3>Superman</h3>
+            <p class="descripcion">Un superhéroe, se reconcilia con su herencia y su educación humana. Es la encarnación de la verdad, la justicia y un mañana mejor en un mundo que ve la bondad como algo anticuado.</p>
+          </article>
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.imdb.com/es/video/vi3218196505/?playlistId=tt10676052&ref_=tt_ov_ov_vi" target="_blank" rel="noopener">
+              <img src="./imagenes/cuatro.jpg" alt="Poster de cuatro fantasticos" />
+            </a>
+            <h3>los Cuatro Fantásticos</h3>
+            <p class="descripcion">Una de las familias más icónicas de Marvel llega a la gran pantalla: los Cuatro Fantásticos..</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- galeria de series para maratonear -->
+    <section id="series">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Series para maratonear</h2>
+        <div class="media-grid">
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.youtube.com/watch?v=mXd1zTwcQ18" target="_blank" rel="noopener">
+              <img src="./imagenes/BreakingBad.jpg" alt="Poster de la serie Breaking Bad" />
+            </a>
+            <h3>Breaking Bad</h3>
+            <p class="descripcion">Walter White se adentra en el mundo del narcotráfico para asegurar el futuro de su familia.</p>
+          </article>
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.youtube.com/watch?v=PjElOuIECdE" target="_blank" rel="noopener">
+              <img src="./imagenes/BetterCallSaul.jpg" alt="Poster de la serie Better Call Saul" />
+            </a>
+            <h3>Better Call Saul</h3>
+            <p class="descripcion">Jimmy McGill lucha por convertirse en un abogado respetable antes de ser Saul Goodman.</p>
+          </article>
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.youtube.com/watch?v=6YD0viMgZpg" target="_blank" rel="noopener">
+              <img src="./imagenes/You.jpg" alt="Poster de la serie You" />
+            </a>
+            <h3>You</h3>
+            <p class="descripcion">Joe Goldberg hará lo que sea necesario para conquistar a la persona que ama.</p>
+          </article>
+          <article class="media-card">
+            <a class="media-enlace" href="https://www.youtube.com/watch?v=AD0qUhZpbfc" target="_blank" rel="noopener">
+              <img src="./imagenes/theboys.jpg" alt="Poster de la serie The Boys" />
+            </a>
+            <h3>The Boys</h3>
+            <p class="descripcion">Un grupo de vigilantes desenmascara a superhéroes corruptos en una cruzada explosiva.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- formulario para recibir mensajes -->
     <section id="contacto">
       <div class="contenedor">
         <h2 class="titulo-seccion">Contacto</h2>
@@ -122,8 +183,9 @@
     </section>
   </main>
 
+  <!-- pie de pagina con el copyright -->
   <footer>
-    © 2024 CineStream. Todas las historias, una sola pantalla.
+     Catalina Del Giorno
   </footer>
 </body>
 </html>
